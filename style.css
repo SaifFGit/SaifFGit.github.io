@@ -1,13 +1,17 @@
 body, html {
-    background-color: green;
+    background-color: white;
 } 
 
-h2 {
-    color: red; 
-    font-size: 20px;
-}
+.imageContainer {
+    position: relative;
+    text-align: center;
+    color: black;
+    font-size: 30pt;
+  }
 
-.container {
-    color: orange;
-    padding: 24px;
-}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
