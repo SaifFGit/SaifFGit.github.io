@@ -1,9 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html>
+  <head>
 
-<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Saif Fadhel</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> 
     <!-- Import CSS -->
@@ -12,51 +13,127 @@
     <link rel="icon" href="images/favicon.io"/>
     <!-- Import font awesome -->
     <script src="https://kit.fontawesome.com/d245b2d381.js" crossorigin="anonymous"></script>   
-    <title>Saif Fadhel</title>
-</head>
+  
+  </head>
 
 
 
-<body>
+  <body>
+  
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar navbar-dark">
+      <a href="#" class="navbar-brand"></a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse2">
+          <span class="navbar-toggler-icon"></span>
+      </button>
 
-  <nav class="navbar navbar-expand-lg navbar navbar-dark bg-primary">
-    <a href="#" class="navbar-brand"></a>
-    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse2">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse2">
+          <div class="navbar-nav">
+              <a href="#" class="nav-item nav-link active">Home</a>
+              <a href="#about" class="nav-item nav-link">About Me</a>
+              <a href="#projects" class="nav-item nav-link">Projects</a>
+              <a href="https://github.com/SaifFGit" class="nav-item nav-link">GitHub</a>
+              <a href="https://www.linkedin.com/in/saiffadhel/" class="nav-item nav-link">LinkedIn</a>
+              <a href="Saif_Fadhel_Resume_2020.PDF" class="nav-item nav-link">Résumé</a>
+          </div>
+          <!-- <form class="form-inline ml-auto">
+              <input type="text" class="form-control mr-sm-2" placeholder="Search">
+              <button type="submit" class="btn btn-outline-light">Search</button>
+          </form> -->
+      </div>
+    </nav>
 
-    <div class="collapse navbar-collapse" id="navbarCollapse2">
-        <div class="navbar-nav">
-            <a href="#" class="nav-item nav-link active">Home</a>
-            <a href="#about" class="nav-item nav-link">About Me</a>
-            <a href="#" class="nav-item nav-link">Projects</a>
-            <a href="https://github.com/SaifFGit" class="nav-item nav-link">GitHub</a>
-            <a href="https://www.linkedin.com/in/saiffadhel/" class="nav-item nav-link">LinkedIn</a>
+    <!-- Main Image -->
+    <div class="imageContainer">
+      <img src="desk.JPG" alt="..." style="width:100%;">
+      <div class="centered">Hi, I'm Saif</div>
+      <div class="centered2">Happy to meet you!</div>
+    </div> 
+
+    <!-- Container of 'About Me' section and 'Projects' section -->
+    <div class="container">
+      <br><br><br>
+      <h2 id="about">A Little About Me...</h2 id>
+      <br>
+      <p>I am currently a third year software engineering student at McMaster University. While I certainly enjoy coding and recreating old video games, I love to listen to music, read and play sports as well. </p>
+      <br>
+      <h2 id="projects">Projects</h2 id>
+      <br>
+
+      <!-- Cards -->
+      <div class="cardContainer">
+
+        <div class="card">
+          
+          <div class="face face1">
+            <div class="content">
+              <img src="tetris.PNG">
+              <h3>Tetris</h3>
+            </div>
+          </div>
+
+          <div class="face face2">
+            <div class="content">
+              <p>I recreated Tetris the video game with some
+                added features like level selection screens including
+                harder difficulty settings.</p>
+                <h6 class="java">Java</h6>
+            </div>
+          </div>
+
         </div>
-        <form class="form-inline ml-auto">
-            <input type="text" class="form-control mr-sm-2" placeholder="Search">
-            <button type="submit" class="btn btn-outline-light">Search</button>
-        </form>
+
+        <div class="card">
+          
+          <div class="face face1">
+            <div class="content">
+              <img src="invaders.PNG">
+              <h3>Space Invaders</h3>
+            </div>
+          </div>
+
+          <div class="face face2">
+            <div class="content">
+              <p> Recreated the classic Space Invaders video game in a Java graphical user interface
+                and included visuals created in Adobe Photoshop.
+              </p>
+              <h6 class="java">Java</h6>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="card">
+          
+          <div class="face face1">
+            <div class="content">
+              <img src="fractal.PNG">
+              <h3>Fib Fractal Generator</h3>
+            </div>
+          </div>
+
+          <div class="face face2">
+            <div class="content">
+              <p>Developed a program that generates Fibonacci
+                fractals from an n value of 30 and higher within
+                a very short time interval.</p>
+                <h6 class="c">C</h6>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
     </div>
-  </nav>
 
-  <div class="imageContainer">
-    <img src="desk.JPG" alt="" style="width:100%;">
-    <div class="centered">Hi, I'm Saif</div>
-  </div> 
 
-  <div class="container">
-    <br>
-    <h2 id="about">A Little About Me...</h2 id>
-    <br>
-    <p>I am currently a third year software engineering student at McMaster University. </p>
-    <p>While I certainly enjoy coding and recreating old video games, I love to listen to music, read and play sports as well.</p>
-  </div> 
 
+
+    <!-- Bootstrap CSS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-</body>
 
-
+  </body>
 </html>
