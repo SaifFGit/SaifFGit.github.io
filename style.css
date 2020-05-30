@@ -3,7 +3,7 @@ body, html {
 	align-items: center;
 	justify-content: center;
 	scroll-behavior: smooth;
-} 
+}
 
 .centered {
     position: absolute;
@@ -20,7 +20,7 @@ body, html {
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  
+
 .container {
 	color: #EAEAEA;
 }
@@ -148,8 +148,41 @@ body, html {
 	border: 1px solid #ffbb00;
 }
 
+.html {
+	margin: 15px 0 0;
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 900;
+	color: white;
+	background-color: black;
+	padding: 5px;
+	border: 1px solid black;
+}
+
+.css {
+	margin: 15px 0 0;
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 900;
+	color: white;
+	background-color: purple;
+	padding: 5px;
+	border: 1px solid purple;
+}
+
+.js {
+	margin: 15px 0 0;
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 900;
+	color: white;
+	background-color: green;
+	padding: 5px;
+	border: 1px solid green;
+}
+
+
 
 .navbar-nav a {
 	transition: 2s;
-} 
-
+}
