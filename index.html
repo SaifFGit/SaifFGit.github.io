@@ -1,185 +1,131 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en-US">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Saif Fadhel</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <!-- Import CSS -->
-    <link rel="stylesheet" href="style.css"/>
-    <!-- Insert icon -->
-    <link rel="icon" href="images/favicon.io"/>
-    <!-- Import font awesome -->
-    <script src="https://kit.fontawesome.com/d245b2d381.js" crossorigin="anonymous"></script>
+    <title>Saif Fadhel | Software Developer </title>
+    <!-- metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="css/site-style.css">
   </head>
-
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar navbar-dark">
-      <a href="#" class="navbar-brand"></a>
-      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse2">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarCollapse2">
-          <div class="navbar-nav">
-              <a href="#" class="nav-item nav-link active">Home</a>
-              <a href="#about" class="nav-item nav-link">About Me</a>
-              <a href="#projects" class="nav-item nav-link">Projects</a>
-              <a href="https://github.com/SaifFGit" class="nav-item nav-link">GitHub</a>
-              <a href="https://www.linkedin.com/in/saiffadhel/" class="nav-item nav-link">LinkedIn</a>
-              <a href="Saif_Fadhel_Resume_2020.PDF" class="nav-item nav-link">Résumé</a>
-          </div>
-          <!-- <form class="form-inline ml-auto">
-              <input type="text" class="form-control mr-sm-2" placeholder="Search">
-              <button type="submit" class="btn btn-outline-light">Search</button>
-          </form> -->
+  <body data-spy="scroll" data-target="#navbarNav" data-offset="50">
+    <!-- menu navigation bar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Saif Fadhel</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-lg-auto">
+              <li class="nav-item"><a href="#" class="nav-link smoothScroll">Home</a></li>
+              <li class="nav-item"><a href="#about" class="nav-link smoothScroll">About</a></li>
+              <li class="nav-item"><a href="#projects" class="nav-link smoothScroll">Projects</a></li>
+              <li class="nav-item"><a href="https://github.com/SaifFGit" class="nav-link smoothScroll">GitHub</a></li>
+              <li class="nav-item"><a href="https://www.linkedin.com/in/saiffadhel" class="nav-link smoothScroll">LinkedIn</a></li>
+              <li class="nav-item"><a href="documents/Saif_Fadhel_Resume.PDF" class="nav-link smoothScroll">Résumé</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
-
-    <!-- Main Image -->
-    <div class="imageContainer">
-      <img src="desk.JPG" alt="..." style="width:100%;">
-      <div class="centered">Hi, I'm Saif</div>
-      <div class="centered2">Happy to meet you!</div>
-    </div>
-
-    <!-- Container of 'About Me' section and 'Projects' section -->
-    <div class="container">
-      <br><br><br>
-      <h2 id="about">A Little About Me...</h2 id>
-      <br>
-      <p>I am currently a third year software engineering student at McMaster University. While I certainly enjoy coding and recreating old video games, I love to listen to music, read and play sports as well. </p>
-      <br>
-      <h2 id="projects">Projects</h2 id>
-      <br>
-
-      <!-- Cards starting with Row #1 -->
-      <div class="cardContainer">
-
-        <!-- Project #1 -->
-        <div class="card">
-          <div class="face face1">
-            <div class="content">
-              <img src="tetris.PNG">
-              <h3>Tetris</h3>
-            </div>
-          </div>
-          <div class="face face2">
-            <div class="content">
-              <p>I recreated Tetris the video game with some
-                added features like level selection screens including
-                harder difficulty settings.</p>
-                <h6 class="java">Java</h6>
+    <!-- hero background image -->
+    <section class="hero d-flex flex-column justify-content-center align-items-center" id="home">
+      <div class="bg-overlay"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto col-12">
+              <div class="hero-text mt-5 text-center">
+                <h1 data-aos="fade-up" data-aos-delay="300">Welcome!</h1>
+                <h5 data-aos="fade-up" data-aos-delay="300">Nice to meet you</h5>
+              </div>
             </div>
           </div>
         </div>
-
-        <!-- Project #2 -->
-        <div class="card">
-          <div class="face face1">
-            <div class="content">
-              <img src="invaders.PNG">
-              <h3>Space Invaders</h3>
-            </div>
+    </section>
+    <!-- about -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="mt-lg-5 mb-lg-0 mb-4 col-lg-5 col-md-10 mx-auto col-12">
+            <h2 class="mb-4" data-aos="fade-up" data-aos-delay="300">Little Bit About Me</h2>
+              <p data-aos="fade-up" data-aos-delay="400"> Currently, I'm a third year software engineering student at McMaster University. While coding has defintely been a major passion of mine ever since I first learned to recreate classic video games such as Tetris, I enjoy listening to music, reading books from time to time and playing sports as well!</p>
           </div>
-          <div class="face face2">
-            <div class="content">
-              <p> Recreated the classic Space Invaders video game in a Java graphical user interface
-                and included visuals created in Adobe Photoshop.
+        </div>
+      </div>
+    </section>
+    <!-- cards -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="row">
+          <div class="mt-lg-5 mb-lg-0 mb-4 col-lg-5 col-md-10 mx-auto col-12">
+            <h2 class="mb-4" data-aos="fade-up" data-aos-delay="300">Current Projects</h2>
+              <p data-aos="fade-up" data-aos-delay="400"> Here is a list of the projects that I have worked on in the past/contiously updating.</p>
+              <!-- Cards starting with Row #1 -->
+               <div class="cardContainer">
+                 <!-- Project #1 -->
+                 <div class="card">
+                   <div class="face face1">
+                     <div class="content">
+                       <img src="images/tetris.PNG">
+                       <h3>Tetris</h3>
+                     </div>
+                   </div>
+                   <div class="face face2">
+                     <div class="content">
+                       <p>Recreated Tetris the video game with some
+                         added features like level selection screens including
+                         harder difficulty settings.</p>
+                         <h6 class="java">Java</h6>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="card">
+                   <div class="face face1">
+                     <div class="content">
+                       <img src="images/tetris.PNG">
+                       <h3>Tetris</h3>
+                     </div>
+                   </div>
+                   <div class="face face2">
+                     <div class="content">
+                       <p>Recreated Tetris the video game with some
+                         added features like level selection screens including
+                         harder difficulty settings.</p>
+                         <h6 class="java">Java</h6>
+                     </div>
+                   </div>
+                 </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="ml-auto col-lg-4 col-md-5">
+            <p class="copyright-text">Made by Saif Fadhel</p>
+          </div>
+            <div class="d-flex justify-content-center mx-auto col-lg-5 col-md-7 col-12">
+              <p class="mr-4">
+                <i class="fa fa-envelope-o mr-1"></i>
+                  <a href="#">fadhels@mcmaster.ca</a>
               </p>
-              <h6 class="java">Java</h6>
+                <p><i class="fa fa-phone mr-1"></i> 647-447-8778</p>
             </div>
           </div>
-        </div>
-
-        <!-- Project #3 -->
-        <div class="card">
-          <div class="face face1">
-            <div class="content">
-              <img src="fractal.PNG">
-              <h3>Fib Fractal Generator</h3>
-            </div>
-          </div>
-          <div class="face face2">
-            <div class="content">
-              <p>Developed a program that generates Fibonacci
-                fractals from an n value of 30 and higher within
-                a very short time interval.</p>
-                <h6 class="c">C</h6>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Row #2 -->
-      <div class="cardContainer">
-
-        <!-- Project #4 -->
-        <div class="card">
-          <div class="face face1">
-            <div class="content">
-              <a href="https://saiffgit.github.io/Typing-Speed-Tester/"><img src="type.PNG"></a>
-              <h3>Typing Speed Tester</h3>
-            </div>
-          </div>
-          <div class="face face2">
-            <div class="content">
-              <p>Project I started while taking the online LinkedInLearning
-                course JavaScript Essentials. Features WPM and accuracy
-                for competitive typing!</p>
-                <h6 class="html">HTML</h6>
-                <h6 class="css">CSS</h6>
-                <h6 class="js">JavaScript</h6>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project #5 -->
-        <div class="card">
-          <div class="face face1">
-            <div class="content">
-              <a href="https://saiffgit.github.io/Word-Beater/"><img src="words.PNG"></a>
-              <h3>Word Beater</h3>
-            </div>
-          </div>
-          <div class="face face2">
-            <div class="content">
-              <p>Project that I modified from Traversy Media
-              by testing users with over 54,000 different words!
-              Fun and new experience every time you play! :D </p>
-                <h6 class="html">HTML</h6>
-                <h6 class="js">JavaScript</h6>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project #6 -->
-        <div class="card">
-          <div class="face face1">
-            <div class="content">
-              <a href=""><img src="words.PNG"></a>
-              <h3>Oops</h3>
-            </div>
-          </div>
-          <div class="face face2">
-            <div class="content">
-              <p>Under Construction </p>
-                <!-- <h6 class="html">HTML</h6>
-                <h6 class="js">JavaScript</h6> -->
-            </div>
-          </div>
-        </div>
-
-
-      </div>
-    </div>
-
-    <!-- Bootstrap CSS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
+         </div>
+    </footer>
   </body>
+
+  <!-- scripts -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/smoothscroll.js"></script>
+  <script src="js/custom.js"></script>
 </html>
