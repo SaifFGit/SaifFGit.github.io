@@ -1,0 +1,324 @@
+/************** GENERAL **************/
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*::before,
+*::after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+a {
+	color: gray;
+	font-weight: normal;
+	text-decoration: none;
+	transition: all 0.5s ease;
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: gray;
+	outline: none;
+	text-decoration: none;
+}
+
+
+/************** NAVBAR **************/
+.navbar {
+	background: #171819; /* dark color */
+	padding: 1rem;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+	padding-right: 1.5rem;
+	padding-left: 1.5rem;
+}
+
+.navbar-brand {
+	color: white;
+	font-size: 28px;
+	font-weight: bold;
+	line-height: normal;
+	padding-top: 0;
+}
+
+.nav-item .nav-link {
+	display: block;
+	color: white;
+	font-size: 14px;
+	font-weight: normal;
+	text-transform: uppercase;
+	padding: 2px 6px;
+}
+
+.nav-item .nav-link.active,
+.nav-item .nav-link:hover {
+	color: gray;
+}
+
+.navbar-toggler {
+	border: 0;
+	padding: 0;
+	cursor: pointer;
+	margin: 0 10px 0 0;
+	width: 30px;
+	height: 35px;
+	outline: none;
+}
+
+.navbar-toggler:focus {
+	outline: none;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+	background: transparent;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before,
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+	transition: top 300ms 50ms ease, -webkit-transform 300ms 350ms ease;
+	transition: top 300ms 50ms ease, transform 300ms 350ms ease;
+	transition: top 300ms 50ms ease, transform 300ms 350ms ease, -webkit-transform 300ms 350ms ease;
+	top: 0;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
+	transform: rotate(45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+	transform: rotate(-45deg);
+}
+
+.navbar-toggler .navbar-toggler-icon {
+	background: gray;
+	transition: background 10ms 300ms ease;
+	display: block;
+	width: 30px;
+	height: 2px;
+	position: relative;
+}
+
+.navbar-toggler .navbar-toggler-icon::before,
+.navbar-toggler .navbar-toggler-icon::after {
+	transition: top 300ms 350ms ease, -webkit-transform 300ms 50ms ease;
+	transition: top 300ms 350ms ease, transform 300ms 50ms ease;
+	transition: top 300ms 350ms ease, transform 300ms 50ms ease, -webkit-transform 300ms 50ms ease;
+	position: absolute;
+	right: 0;
+	left: 0;
+	background: gray;
+	width: 30px;
+	height: 2px;
+	content: '';
+}
+
+.navbar-toggler .navbar-toggler-icon::before {
+	top: -8px;
+}
+
+.navbar-toggler .navbar-toggler-icon::after {
+	top: 8px;
+}
+
+/************** HERO **************/
+.hero {
+	background-image: url('../images/NYC.JPG');
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	min-height: 100vh;
+	position: relative;
+}
+
+/************** ABOUT **************/
+
+.about {
+	background: #1e1f1f; /* dark color */
+	color: white;
+	padding:2rem 0;
+}
+
+/************** PROJECTS **************/
+
+.projects {
+	background: #171819; /* dark color */
+	color: white;
+	padding:2rem 0;
+}
+
+.cardContainer {
+	width: 1100px;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+
+.cardContainer .card {
+	position: relative;
+	background-color: #171819; /* dark color */
+	border-color: #171819; /* dark color */
+}
+
+.cardContainer .card .face {
+	width: 340px;
+	height: 200px;
+	transition: 0.5s;
+}
+
+.cardContainer .card .face.face1 {
+	position: relative;
+	background: #171819; /* dark color */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: -20px 0 0;
+	z-index: 1;
+	transform: translateY(100px);
+}
+
+.cardContainer .card:hover .face.face1 {
+
+	background-color: #171819; /* dark color */
+	transform: translateY(0);
+}
+
+.cardContainer .card .face.face1 .content {
+	opacity: 0.2;
+    text-align: center;
+	transition: 0.5s;
+}
+
+.cardContainer .card:hover .face.face1 .content {
+	opacity: 1;
+}
+
+.cardContainer .card:hover .face.face1 .content h3 {
+	margin: 10px 0 0;
+	padding: 0;
+	color: #fff;
+	text-align: center;
+	font-size: 1.4em;
+}
+
+.cardContainer .card .face.face2 {
+	position: relative;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	box-sizing: border-box;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.8);
+	transform: translateY(-100px);
+}
+
+.cardContainer .card:hover .face.face2 {
+	transform: translateY(0);
+}
+
+.cardContainer .card .face.face2 .content p {
+	margin: 0;
+	padding: 0;
+	color: #171819; /* dark color */
+}
+
+.cardContainer .card .face.face2 .content a {
+	margin: 15px 0 0;
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 900;
+	color: #171819; /* dark color */
+	padding: 5px;
+	border: 1px solid #171819; /* dark color */
+}
+
+.cardContainer .card .face.face2 .content a:hover {
+	background: #171819; /* dark color */
+	color: #fff;
+}
+
+.java {
+	margin: 15px 0 0;
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 900;
+	color: white;
+	background-color: #cf1c1c;
+	padding: 5px;
+	border: 1px solid #cf1c1c;
+}
+
+.c {
+	margin: 15px 0 0;
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 900;
+	color: white;
+	background-color: #ffbb00;
+	padding: 5px;
+	border: 1px solid #ffbb00;
+}
+
+.html {
+	margin: 15px 0 0;
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 900;
+	color: white;
+	background-color: black;
+	padding: 5px;
+	border: 1px solid black;
+}
+
+.css {
+	margin: 15px 0 0;
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 900;
+	color: white;
+	background-color: purple;
+	padding: 5px;
+	border: 1px solid purple;
+}
+
+.js {
+	margin: 15px 0 0;
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 900;
+	color: white;
+	background-color: green;
+	padding: 5px;
+	border: 1px solid green;
+}
+
+
+/************** FOOTER **************/
+
+.site-footer {
+	border-top: 1px solid black;
+	background-color: white;
+	padding: 3rem 0;
+	color: black;
+}
+
+.site-footer a {
+	color: gray;
+	font-weight: bold;
+}
+
+.site-footer p {
+	font-size: 14px;
+}
+
+.contact .fa,
+.site-footer .fa {
+	color: gray;
+}
