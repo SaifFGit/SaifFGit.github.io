@@ -1,4 +1,9 @@
 /************** GENERAL **************/
+
+body {
+	background: #212121; /* dark color */
+}
+
 * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -148,22 +153,29 @@ a:focus {
 /************** PROJECTS **************/
 
 .projects {
-	background: #171819; /* dark color */
+	background: #212121; /* dark color */
 	color: white;
 	padding:2rem 0;
 }
 
+/************** CARDS **************/
+
+.cardSection {
+	background: #212121; /* dark color */
+}
+
 .cardContainer {
-	width: 1100px;
+	width: 100px
 	position: relative;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
+	align-items: center;
 }
 
 .cardContainer .card {
 	position: relative;
-	background-color: #171819; /* dark color */
-	border-color: #171819; /* dark color */
+	background-color: #212121;
+	border-color: #212121;
 }
 
 .cardContainer .card .face {
@@ -174,7 +186,8 @@ a:focus {
 
 .cardContainer .card .face.face1 {
 	position: relative;
-	background: #171819; /* dark color */
+	color: white;
+	background: #212121;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -185,13 +198,13 @@ a:focus {
 
 .cardContainer .card:hover .face.face1 {
 
-	background-color: #171819; /* dark color */
+	background-color: #25B6FF;
 	transform: translateY(0);
 }
 
 .cardContainer .card .face.face1 .content {
 	opacity: 0.2;
-    text-align: center;
+  text-align: center;
 	transition: 0.5s;
 }
 
@@ -226,7 +239,7 @@ a:focus {
 .cardContainer .card .face.face2 .content p {
 	margin: 0;
 	padding: 0;
-	color: #171819; /* dark color */
+	color: #212121;
 }
 
 .cardContainer .card .face.face2 .content a {
@@ -234,14 +247,23 @@ a:focus {
 	display: inline-block;
 	text-decoration: none;
 	font-weight: 900;
-	color: #171819; /* dark color */
+	color: #212121;
 	padding: 5px;
-	border: 1px solid #171819; /* dark color */
+	border: 1px solid #212121;
 }
 
 .cardContainer .card .face.face2 .content a:hover {
-	background: #171819; /* dark color */
+	background: #212121;
 	color: #fff;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 1000px) {
+  .cardContainer {
+    width: 100%;
+    display: block;
+		margin-left: 200px;
+  }
 }
 
 .java {
