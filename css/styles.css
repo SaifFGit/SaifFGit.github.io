@@ -1,0 +1,202 @@
+/*
+Color Palette Definition Codes
+------------------------------
+#000000 - Black
+#006eff - Lighter than Dark Blue
+#0A253B - Professional Looking Dark Blue 
+#ECECEC - Whiteish Grey
+#101010 - Dark Grey
+*/
+
+/* Global Styles */
+/* -------------------------------------------------------- */
+
+/* --- box model fix start --- */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*after {
+  box-sizing: inherit;
+}
+/* --- box model fix end --- */
+
+body {
+  color: #000000; /* font color */
+  margin: 0; /* removes space between sections and edge of browser  */
+  padding: 0; /* convention */
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+img {
+  width: 300px;
+}
+
+a {
+  color: blue; /* sets link color */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #006eff; /* hovering over links changes their color */
+}
+h1 {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 100px;
+  margin-bottom: 0;
+}
+
+h2 {
+  margin: 0;
+  font-size: 40px;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+h3 {
+  margin: 0;
+}
+
+h4 {
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  margin-top: 0;
+}
+
+h5 {
+  margin: 10px 0 0 0;
+  font-size: 20px;
+}
+
+.content-wrap {
+  max-width: 1000px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+/* Profile Styles */
+/* -------------------------------------------------------- */
+header {
+  background: #101010; /* header background color */
+  color: white; /* font color */
+}
+
+/* Projects Styles */
+/* -------------------------------------------------------- */
+.projects {
+  background: #ececec; /* projects background color */
+}
+
+.project-item {
+  overflow: hidden;
+  /* border-bottom: 1px dashed #101010;
+  padding: 25px 0; */
+}
+
+.project-item a {
+  color: #ececec; /* text color */
+  background: #0a253b; /* background color */
+  text-decoration: none;
+  padding: 7px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.project-item a:hover {
+  background: rgba(10, 37, 59, 80%);
+}
+
+/* Work Experience Styles */
+/* -------------------------------------------------------- */
+.experience {
+  /* background: #ececec; */
+  background-image: url(../images/Ericssonbg.png);
+  background-size: cover;
+  background-position: top;
+}
+
+/* Education Styles */
+/* -------------------------------------------------------- */
+.education {
+  background-image: url(../images/McMasterbg.png);
+  background-size: cover;
+  color: white;
+}
+
+/* Contact Information Styles */
+/* -------------------------------------------------------- */
+footer {
+  background: #101010; /* footer color */
+  color: white;
+}
+
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-list a {
+  color: white;
+  padding: 15px;
+  display: inline-block;
+}
+
+.contact-list a:hover {
+  color: #006eff;
+}
+
+/* Responsive Styles */
+/* -------------------------------------------------------- */
+
+@media screen and (min-width: 1200px) {
+  header,
+  footer {
+    text-align: center;
+  }
+
+  .project-item img {
+    float: left;
+    margin-right: 30px;
+    width: 380px;
+  }
+
+  .education-item img {
+    float: left;
+    margin-right: 30px;
+    width: 380px;
+  }
+
+  .job-item img {
+    float: left;
+    margin-right: 30px;
+    width: 380px;
+  }
+
+  .job-item {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    column-gap: 20px;
+  }
+
+  .education-item {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    column-gap: 20px;
+  }
+  .contact-list {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  /* .contact-list {
+    display: flex;
+    justify-content: center;
+  } */
+}
