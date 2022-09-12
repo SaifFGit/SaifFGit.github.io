@@ -4,4 +4,5 @@ Here's the repository for my static personal website that I use to keep track of
 ## Link
 Visit the website here: https://saiffgit.github.io/
 
-![personalSite](https://user-images.githubusercontent.com/52171136/189564807-c1264c36-3180-42bd-830a-b98c883ddde4.gif)
+## Demo
+![personalSite](https://user-images.githubusercontent.com/52171136/189565716-297c6728-4dd2-4706-a442-7ec1569dfebe.gif)
