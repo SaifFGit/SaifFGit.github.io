@@ -93,9 +93,13 @@ h5 {
 
 .brand-name {
   padding: 1rem;
+  border-right: solid #1a1a1a 1px;
+}
+
+.brand-name a {
+  color: white;
   font-family: "Yanone Kaffeesatz", sans-serif;
   font-size: 25px;
-  border-right: solid #1a1a1a 1px;
 }
 
 .navbar-links ul {
