@@ -85,14 +85,12 @@ h5 {
 .navbar {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
   background-color: #101010;
   color: white;
 }
 
 .brand-name {
   padding: 1rem;
-  /* background-color: rgb(20, 20, 20); */
   font-family: "Inter", sans-serif;
   font-size: 25px;
   border-right: solid #1a1a1a 1px;
@@ -110,10 +108,10 @@ h5 {
 
 .navbar-links li a {
   color: white;
-  border-right: solid #1a1a1a 1px;
   font-family: "Inter", sans-serif;
-  font-size: 25px;
-  padding: 1rem;
+  font-size: 15px;
+  margin-top: 0.3rem;
+  padding: 1.3rem;
   display: block;
 }
 
@@ -145,8 +143,8 @@ header {
   color: white;
   background-position: center;
   background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url(../images/nature2.gif);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
+    url(../images/nature3.gif);
 }
 
 /* Projects Styles */
