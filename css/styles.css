@@ -288,9 +288,11 @@ footer {
   }
 
   h1 {
-    font-size: 40px;
+    margin-top: 0px;
+    font-size: 65px;
+    padding-bottom: 10px;
   }
   h2 {
-    font-size: 35px;
+    font-size: 30px;
   }
 }
