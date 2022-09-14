@@ -17,10 +17,34 @@
   </head>
   <body>
     <main>
+
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="brand-name">Saif Fadhel</div>
+        <!-- Hamburger Button -->
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <!-- Navbar Options -->
+        <div class="navbar-links">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contactinfo">Contact Me</a></li>
+            <li><a href="documents/resume2022.pdf">Résumé</a></li>
+          </ul>
+        </div>
+      </nav>
+
       <!-- About Me -->
       <header>
         <div class="content-wrap">
-          <h1>Saif Fadhel</h1>
+          <!-- <img src="images/header.gif" alt="Header Gif" /> -->
+          <h1>Hi! I'm Saif</h1>
           <h2>Software Engineering Graduate from McMaster University</h2>
           <p>
             While coding has defintely been a major passion of mine ever since I
@@ -36,7 +60,7 @@
       </header>
 
       <!-- Projects -->
-      <section class="projects">
+      <section class="projects" id="projects">
         <div class="content-wrap">
           <h2>Featured Projects</h2>
           <p>
@@ -75,7 +99,7 @@
       </section>
 
       <!-- Work Experience -->
-      <section class="experience">
+      <section class="experience" id="experience">
         <div class="content-wrap">
           <h2>Work Experience</h2>
 
@@ -119,7 +143,7 @@
       </section>
 
       <!-- Education & Certifications -->
-      <section class="education">
+      <section class="education" id="education">
         <div class="content-wrap">
           <h2>Education</h2>
           <section class="education-item">
@@ -166,7 +190,7 @@
       </section>
 
       <!-- Contact Information -->
-      <footer>
+      <footer id="contactinfo">
         <div class="content-wrap">
           <h2>Contact Information</h2>
 
@@ -192,4 +216,6 @@
       </footer>
     </main>
   </body>
+  <!-- JavaScript Files -->
+  <script src="js/script.js"></script>
 </html>
