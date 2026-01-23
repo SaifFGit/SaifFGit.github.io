@@ -45,6 +45,7 @@ a {
 a:hover {
   color: #006eff; /* hovering over links changes their color */
 }
+
 h1 {
   font-family: "Yanone Kaffeesatz", sans-serif;
   font-size: 100px;
@@ -92,14 +93,16 @@ h5 {
 }
 
 .brand-name {
-  padding: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
   border-right: solid #1a1a1a 1px;
+  display: flex;
+  align-items: center;
 }
 
-.brand-name a {
-  color: white;
-  font-family: "Yanone Kaffeesatz", sans-serif;
-  font-size: 25px;
+.home_button {
+  width: 25px;   
+  height: 25px;
 }
 
 .navbar-links ul {
@@ -110,15 +113,15 @@ h5 {
 
 .navbar-links li {
   list-style: none;
+  transition: background-color 0.2s ease; 
 }
 
 .navbar-links li a {
   color: white;
   font-family: "Inter", sans-serif;
   font-size: 15px;
-  margin-top: 0.3rem;
-  padding: 1.3rem;
-  display: block;
+  padding: 1.5rem;
+  display: block;  
 }
 
 .navbar-links li:hover {
@@ -254,6 +257,7 @@ footer {
     grid-template-columns: 2fr 3fr;
     column-gap: 20px;
   }
+
   .contact-list {
     display: flex;
     justify-content: center;
@@ -298,7 +302,9 @@ footer {
     font-size: 65px;
     padding-bottom: 10px;
   }
+
   h2 {
     font-size: 30px;
   }
+
 }
